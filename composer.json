@@ -1,0 +1,16 @@
+{
+    "name": "ecotrack/carbon-footprint",
+    "description": "EcoTrack adalah aplikasi berbasis website yang dirancang untuk membantu individu dan komunitas mengelola, melacak, serta mengurangi jejak karbon mereka.",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ecotrack\\CarbonFootprint\\": "classes/"
+        }
+    },
+    "minimum-stability": "stable"
+}

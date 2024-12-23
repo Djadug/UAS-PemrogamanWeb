@@ -1,0 +1,182 @@
+/* Global Styles */
+:root {
+    --primary-color: #2ecc71;
+    --secondary-color: #27ae60;
+    --dark-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --danger-color: #e74c3c;
+    --success-color: #27ae60;
+    --warning-color: #f1c40f;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Cards */
+.eco-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Dashboard Widgets */
+.carbon-widget {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Forms */
+.eco-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
+}
+
+/* Buttons */
+.btn-eco {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-eco:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Progress Bars */
+.progress-eco {
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.progress-bar-eco {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Challenges Section */
+.challenge-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Community Section */
+.community-post {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Utility Classes */
+/* Spacing */
+.mt-6 { margin-top: 4rem; }
+.mb-6 { margin-bottom: 4rem; }
+.py-6 { padding-top: 4rem; padding-bottom: 4rem; }
+
+/* Text Colors */
+.text-eco-primary { color: var(--primary-color); }
+.text-eco-secondary { color: var(--secondary-color); }
+.text-eco-dark { color: var(--dark-color); }
+
+/* Background Colors */
+.bg-eco-primary { background-color: var(--primary-color); }
+.bg-eco-secondary { background-color: var(--secondary-color); }
+.bg-eco-light { background-color: var(--light-color); }
+
+/* Borders */
+.border-eco {
+    border: 1px solid var(--primary-color);
+}
+
+.rounded-eco {
+    border-radius: 10px;
+}
+
+/* Shadows */
+.shadow-eco {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.shadow-eco-lg {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Flex Utilities */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid Utilities */
+.grid-eco {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .eco-card {
+        margin: 10px;
+    }
+    
+    .carbon-widget {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-eco-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-eco-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} 
